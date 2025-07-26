@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('assets/fon.gif');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000; /* Siyah */
+    font-family: 'Press Start 2P', cursive;
+}
+
+#startScreen h1 {
+    font-size: 48px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; /* Beyaz gölge */
+    margin-bottom: 20px;
+}
+
+#startScreen p {
+    font-size: 24px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff; /* Beyaz gölge */
+}
+
+#gameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#gameCanvas {
+    border: 1px solid #0f0;
+}
+
+#controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 800px;
+    margin-top: 10px;
+}
+
+#scoreDisplay, #timerDisplay {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #000; /* Siyah */
+    text-shadow: 0 0 5px #fff; /* Beyaz gölge */
+    padding: 10px;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #000; /* Siyah */
+    background-color: #222;
+    border: 2px solid #0f0;
+    text-shadow: 0 0 5px #fff; /* Beyaz gölge */
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #0f0;
+    color: #000;
+    text-shadow: 0 0 5px #fff;
+}
+
+#audioControls {
+    position: absolute;
+    top: 10px;
+    right: -70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#musicOn, #musicOff {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#musicOn:hover, #musicOff:hover {
+    opacity: 1;
+}
+
+#musicOff {
+    display: none;
+}

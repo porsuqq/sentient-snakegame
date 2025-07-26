@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentient Snake Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1>Sentient Snake Game</h1>
+        <p>Press ENTER to Start</p>
+    </div>
+    <div id="gameScreen" style="display: none;">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="controls">
+            <span id="scoreDisplay">Score: 0</span>
+            <span id="timerDisplay">00:00:00</span>
+            <button id="startButton">Start</button>
+        </div>
+        <div id="audioControls">
+            <img id="musicOn" src="assets/on.png" alt="Music On">
+            <img id="musicOff" src="assets/off.png" alt="Music Off">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
